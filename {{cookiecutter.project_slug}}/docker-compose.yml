@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+    {{cookiecutter.project_slug}}:
+        build: .
+        volumes:
+         -: ./{{cookiecutter.project_slug}} /app
