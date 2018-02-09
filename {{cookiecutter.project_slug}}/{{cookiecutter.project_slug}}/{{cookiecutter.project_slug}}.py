@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
+import connexion
 
-class {{(cookiecutter.project_slug.title()).replace('_', '')}}(object):
-
-	def __init__(self):
-		pass
+{{(cookiecutter.project_slug.title()).replace('_', '')}} = connexion.App(__name__, specification_dir='swagger')
+app.add_api('{{cookiecutter.project_slug}}.yaml')
