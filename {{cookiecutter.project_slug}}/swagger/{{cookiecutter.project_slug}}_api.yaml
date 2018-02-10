@@ -1,0 +1,8 @@
+swagger: '3.0'
+info:
+  title: {{cookiecutter.project_slug}} API
+  version: {{cookiecutter.version}}
+consumes:
+  - application/json
+produces:
+  - application/json
