@@ -1,6 +1,6 @@
 {
-	"full_name": "Brecht Dierckx",
-	"email": "brecht.dierckx@gmail.com",
+	"full_name": "Joe Funnypants",
+	"email": "something@something",
 	"github_username": "flatspace",
 	"project_name": "Python Boilerplate",
 	"project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
