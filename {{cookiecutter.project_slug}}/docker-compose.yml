@@ -2,6 +2,8 @@ version: '3'
 
 services:
     {{cookiecutter.project_slug}}:
-        build: .
+        build:
+          context: .
+          ARGS: [ENV=prod]
         volumes:
          -: ./{{cookiecutter.project_slug}} /app

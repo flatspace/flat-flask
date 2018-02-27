@@ -3,10 +3,10 @@
 	"email": "something@something",
 	"github_username": "flatspace",
 	"project_name": "Python Boilerplate",
-	"project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+	"project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replae('-', '_') }}",
 	"project_short_description": "",
 	"release_date": "2018-01-11",
 	"pypi_username": "{{ cookiecutter.github_username }}",
 	"year": "2018",
-	"version": "0.0.0"
+	"version": "0.0.1"
 }
