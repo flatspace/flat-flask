@@ -3,10 +3,10 @@
 
 import unittest
 
-from {{cookiecutter.project_slug}} import {{(cookiecutter.project_slug.title()).replace('_', '')}}
+from python_boilerplate import PythonBoilerplate
 
 
-class Test{{cookiecutter.project_slug | capitalize}}(unittest.TestCase):
+class TestPython_boilerplate(unittest.TestCase):
 
     def setUp(self):
         pass

@@ -1,9 +1,9 @@
 # Use an official Python runtime as a parent image
-FROM python:3.6.1-slim as {{cookiecutter.project_slug}}
+FROM python:3.6.1-slim as python_boilerplate
 
 ARG ENV=prod
-ARG USER={{cookiecutter.github_username}}
-ARG APP_DIR=/opt/{{cookiecutter.project_slug}}
+ARG USER=flatspace
+ARG APP_DIR=/opt/python_boilerplate
 
 RUN mkdir -p /home/$USER
 
@@ -32,6 +32,6 @@ RUN pip install .
 
 EXPOSE 5000
 
-ENV FLASK_APP={{cookiecutter.project_slug}}.{{cookiecutter.project_slug}}
+ENV FLASK_APP=python_boilerplate.python_boilerplate
 
 CMD flask run

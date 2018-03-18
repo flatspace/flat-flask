@@ -33,22 +33,22 @@ test_requirements = [str(tr.req) for tr in parsed_test_requirements]
 
 
 setup(
-    name='{{ cookiecutter.project_slug }}',
-    version='{{ cookiecutter.version }}',
-    description="{{ cookiecutter.project_short_description }}",
+    name='python_boilerplate',
+    version='0.0.1',
+    description="",
     long_description=readme + '\n\n' + history,
-    author="{{ cookiecutter.full_name }}",
-    author_email='{{ cookiecutter.email }}',
-    url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}',
+    author="Joe Funnypants",
+    author_email='something@something',
+    url='https://github.com/flatspace/python_boilerplate',
     packages=[
-        '{{ cookiecutter.project_slug }}',
+        'python_boilerplate',
     ],
-    package_dir={'{{ cookiecutter.project_slug }}':
-                 '{{ cookiecutter.project_slug }}'},
+    package_dir={'python_boilerplate':
+                 'python_boilerplate'},
     include_package_data=True,
     install_requires=requirements,
     zip_safe=False,
-    keywords='{{ cookiecutter.project_slug }}',
+    keywords='python_boilerplate',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
