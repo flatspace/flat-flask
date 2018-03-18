@@ -28,10 +28,10 @@ USER $user
 
 WORKDIR $APP_DIR
 
-RUN pip install .
+#RUN pip install .
 
 EXPOSE 5000
 
-ENV FLASK_APP={{cookiecutter.project_slug}}.{{cookiecutter.project_slug}}
+WORKDIR $APP_DIR/{{cookiecutter.project_slug}}
 
-CMD flask run
+CMD ["python", "{{cookiecutter.project_slug}}.py"]
